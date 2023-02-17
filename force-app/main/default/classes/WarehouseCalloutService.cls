@@ -31,7 +31,7 @@ public with sharing class WarehouseCalloutService implements Queueable {
                     Warehouse_SKU__c = (String) jsonMap.get('sku')
                 ));
             }
-            
+
             if (!equipments.isEmpty()) {
                 upsert equipments;
             }
